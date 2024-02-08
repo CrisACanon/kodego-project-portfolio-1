@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
+  background-image: url(./Pngtree.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8e0c0c;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.topnav li {
+  float: left;
+}
+
+.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav li.right,
+  .topnav li {
+    float: none;
+  }
+}
+
+form {
+  border: 3px solid #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+section {
+  padding: 1rem;
+}
+section#home {
+  height: 700px;
+  text-align: center;
+  justify-content: left;
+  background-color: white;
+  color: #151718;
+}
+section#home p {
+  max-width: 600px;
+}
+
+section#home img {
+  height: 350px;
+  width: 100%;
+}
+
+section#price {
+  height: 700px;
+  text-align: center;
+  justify-content: left;
+  background-color: white;
+  color: #151718;
+}
+section#price h3 {
+  width: 100%;
+  text-align: left;
+  justify-content: center;
+  font-size: 10px;
+}
+
+section#price img {
+  height: 500px;
+  width: 100%;
+}
+
+section#about,
+section#services {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+section#about p {
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+section#about img {
+  height: 300px;
+  width: 100%;
+  border: 1px solid #4caf50;
+}
+section#services img {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+section#services {
+  background-color: #702632;
+  z-index: -2;
+}
+section#services h3 {
+  color: #fffffa;
+}
+section#services .services {
+  display: flex;
+  justify-content: center;
+}
+section#services .services .service {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+section#services .services .service::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+}
+section#services .services .service h6 {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  color: #fffffa;
+  transition: 0.5s;
+  z-index: 2;
+}
+section#services .services .service:hover h6 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(3);
+}
+section#services .services .service:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+section#services .services .service:hover img {
+  filter: blur(3px);
+}
+section#contact {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+section#contact input,
+section#contact textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+section#contact input[type="submit"] {
+  background-color: #18c94a;
+  border: 0;
+  color: #fffffa;
+  cursor: pointer;
+}
+section#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+    <link rel="stylesheet" href="mycss.css" />
+  </head>
+
+  <body>
+    <ul class="topnav">
+      <li><a class="" href="./home.html">Home</a></li>
+      <li><a href="#about">Products</a></li>
+      <li><a href="./price.html">PriceList</a></li>
+      <li><a href="#home">Brands</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li class="right"><a href="./login.html">Log In</a></li>
+      <li class="right"><a href="./signup.html">Sign Up</a></li>
+    </ul>
+
+    <form action="" method="post">
+      <div class="imgcontainer"></div>
+      <div class="container">
+        <label for="fname"><b>Firs Name</b></label>
+        <input type="text" placeholder="Enter Firsname" name="fname" required />
+        <label for="lname"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter Lastname" name="lname" required />
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required />
+        <label for="add"><b>Email Address</b></label>
+        <input
+          type="email"
+          placeholder="Enter Email Address"
+          name="add"
+          required
+        />
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button type="submit">Login</button>
+      </div>
+
+      <div class="container" style="background-color: #f1f1f1">
+        <span class="psw">Already a <a href="./login.html">member?</a></span>
+      </div>
+    </form>
+  </body>
+</html>
