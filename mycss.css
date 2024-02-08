@@ -159,11 +159,11 @@ section#price h3 {
   width: 100%;
   text-align: left;
   justify-content: center;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 section#price img {
-  height: 300px;
+  height: 600px;
   width: 100%;
   border: 1px solid #4caf50;
 }
@@ -264,14 +264,4 @@ section#contact form {
   flex-direction: column;
   max-width: 500px;
   margin: auto;
-}
-
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(12, 12, 12);
-  color: white;
-  text-align: center;
-  font-size: 16px;
 }
