@@ -119,13 +119,7 @@ section#aboutme {
   background-color: white;
   color: #151718;
 }
-section#aboutme p {
-  color: rgb(6, 7, 6);
-  text-align: left;
-  justify-content: left;
-  font-size: 14px;
-  margin: 2rem;
-}
+
 section#aboutme h1 {
   color: rgb(48, 134, 48);
   text-align: left;
