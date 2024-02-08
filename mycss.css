@@ -230,3 +230,13 @@ section#contact form {
   max-width: 500px;
   margin: auto;
 }
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: #151718;
+  text-align: center;
+  font-size: 16px;
+}
